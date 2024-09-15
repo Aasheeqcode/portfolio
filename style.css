@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+body{
+    width:100%;
+}
+header{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:12px 10px;
+    background: #171717;
+    transition: .4s;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:9px;
+}
+.logo img{
+    width:50px;
+    height:50px;
+    border-radius: 100%;
+}
+.logo h3{
+    font-size: 26px;
+    color:#eeecec;
+}
+nav{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    padding: 0 12px;
+}
+nav li a{
+    text-decoration: none;
+    color:#cccccc;
+}
+.toggle{
+    display: flex;
+    height:100%;
+    align-items: center;
+}
+#toggle{
+    width:60px;
+    height:30px;
+    border-radius:30px;
+}
+#move{
+    width:25px;
+    height:25px;
+    border-radius: 100%;
+    background: #cccccc;
+    cursor: pointer;
+}
+.active{
+    transform: translateX(30px);
+}
+.title{
+    transition: all .4s;
+}
+.hero{
+    width:100%;
+    background: #000;
+    padding:12px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.hero .image{
+    width:450px;
+    height:600px;
+    border-radius: 10px;
+}
+.hero .card{
+    width:60%;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    padding: 20px 0;
+}
+.hero .card h2{
+    font-size: 45px;
+    margin-top: 12px;
+    font-weight: 600;
+}
+.hero .card h3{
+    font-size:35px;
+    padding: 12px 0;
+    font-weight: 500;
+}
+.hero .card p{
+    font-size:25px;
+    padding: 12px 0;
+    font-weight: 500;
+}
+#red{
+    color:red;
+}
+.buttons{
+    display:flex;
+    width:70%;
+    justify-content:center;
+    gap:15px;
+    padding: 20px 12px;
+}
+#towhite,#tored{
+    width:200px;
+    height:60px;
+    font-size: 24px;
+    padding: 2px;
+    border:none;
+    border-radius: 12px;
+    cursor:pointer;
+}
+#tored{
+    background: transparent;
+    color:#fff;
+    border:1px solid #eee;
+}
+#towhite{
+    background:red;
+    color:#fff;
+    border:1px solid #eee;
+}
+#tored:hover{
+    filter:drop-shadow(0 0 7px rgb(254, 99, 99))
+}
+#towhite:hover{
+    filter:drop-shadow(0 0 7px rgb(245, 81, 81))
+}
+#works{
+    background: #171717;
+    width:100%;
+}
+#works h3{
+    text-align: center;
+    font-size: 35px;
+    color:#fff;
+}
+#row1{
+  width:100%;
+  padding: 12px 14px;
+}
+#scrool{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding:12px 0;
+    flex-wrap: wrap;
+}
+#item{
+    width:24%;
+    height:32vh;
+    padding:0 12px;
+    border-radius: 7px;
+}
+#video{
+    width:70%;
+    height:600px;
+}
+.video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.collections{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+#edu{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    background: #000;
+    align-items: center;
+    position: relative;
+}
+.timeline{
+    width:5%;
+    display: flex;
+    flex-direction: column;
+    gap:100px;
+    padding: 20px;
+}
+.point{
+    width:20px;
+    height:20px;
+    border-radius: 100%;
+    background: #fff;
+    position: relative;
+}
+.line{
+    width:2px;
+    height:500px;
+    background: #f0f0f0;
+    position:absolute;
+    left:42%;
+}
+.content{
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    gap:70px;
+}
+.content h3{
+    font-size: 30px;
+    cursor:pointer;
+}
+.viewport{
+    width:30%;
+    height:500px;
+    background: #f5f3f3;
+    position:absolute;
+    left:65%;
+}
+#blink{
+    text-align: center;
+    animation: blink 2s infinite 0s ease;
+}
+@keyframes blink {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1; 
+    }
+}
+#keep{
+    width:100%;
+    height:15vh;
+    background: #2a2929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#keep input{
+    font-size: 25px;
+    color:#333;
+    outline:none;
+    border:1px solid #333;
+    border-top-left-radius:6px;
+    border-bottom-left-radius:6px;
+}
+#send{
+    width:100px;
+    font-size: 24px;
+    margin-right:23px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background:rgb(245, 52, 52);
+    border:none;
+    cursor:pointer;
+}
